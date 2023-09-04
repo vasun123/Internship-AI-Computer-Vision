@@ -23,9 +23,7 @@ data = []
 labels = []
 
 # Reading in images from dataset
-# Bigger dataset: /Users/vasudevnair113/Downloads/faceRecog/archive
-# Bigger dataset: /Users/vasudevnair113/Downloads/faceRecog/archiveSmall2
-image_files = [f for f in glob.glob(r'/Users/vasudevnair113/Downloads/faceRecog/archiveSmall2' + "/**/*", recursive=True) if not os.path.isdir(f)]
+image_files = [f for f in glob.glob(r'/Users/vasudevnair113/Downloads/faceRecog/dataSet' + "/**/*", recursive=True) if not os.path.isdir(f)]
 random.shuffle(image_files)
 
 # Adds images to array, also gives it a label (1 = female, 0 = male)
